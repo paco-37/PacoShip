@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PacoShip - Bist du Paco's perfekte Übereinstimmung?</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Eigene CSS-Datei -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="bg-danger text-white text-center py-5">
+    <div class="container">
+      <h1>PacoShip</h1>
+      <p>Entdecke, ob du Paco's perfekte Übereinstimmung bist!</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PacoShip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Startseite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="card shadow">
+        <div class="card-body">
+          <form id="compatibilityForm">
+            <h2 class="card-title text-danger mb-4">Bist du Paco's Match?</h2>
+
+            <div class="mb-3">
+              <label for="q1" class="form-label">1. Wie wichtig ist dir Reisen? (1-10)</label>
+              <input type="number" class="form-control" id="q1" name="q1" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q2" class="form-label">2. Wie wichtig ist dir Karriere? (1-10)</label>
+              <input type="number" class="form-control" id="q2" name="q2" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q3" class="form-label">3. Wie wichtig ist dir Familie? (1-10)</label>
+              <input type="number" class="form-control" id="q3" name="q3" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q4" class="form-label">4. Wie wichtig ist dir Freizeitgestaltung? (1-10)</label>
+              <input type="number" class="form-control" id="q4" name="q4" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q5" class="form-label">5. Wie wichtig ist dir finanzielle Sicherheit? (1-10)</label>
+              <input type="number" class="form-control" id="q5" name="q5" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q6" class="form-label">6. Wie wichtig ist dir körperliche Fitness? (1-10)</label>
+              <input type="number" class="form-control" id="q6" name="q6" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q7" class="form-label">7. Wie wichtig ist dir Bildung? (1-10)</label>
+              <input type="number" class="form-control" id="q7" name="q7" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q8" class="form-label">8. Wie wichtig ist dir Humor in einer Beziehung? (1-10)</label>
+              <input type="number" class="form-control" id="q8" name="q8" min="1" max="10" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="q9" class="form-label">9. Wie wichtig ist dir Ehrlichkeit? (1-10)</label>
+              <input type="number" class="form-control" id="q9" name="q9" min="1" max="10" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="q10" class="form-label">10. Wie wichtig ist dir Unabhängigkeit? (1-10)</label>
+              <input type="number" class="form-control" id="q10" name="q10" min="1" max="10" required>
+            </div>
+
+            <button type="submit" class="btn btn-danger w-100">Kompatibilität berechnen</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="result mt-4 p-4 bg-light rounded shadow" id="result" style="display: none;"></div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 PacoShip. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS und Abhängigkeiten -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

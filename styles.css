@@ -1,0 +1,77 @@
+/* Grundlegende Stile */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container für zentrierten Inhalt */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header-Stile */
+header {
+  background-color: #dc3545; /* Bootstrap's danger color */
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Hauptinhalt */
+main {
+  padding: 40px 0;
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  color: #dc3545;
+}
+
+.submit-btn {
+  background-color: #dc3545;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #c82333;
+}
+
+/* Ergebnisanzeige */
+.result {
+  display: none; /* Verstecke das Ergebnis anfangs */
+}
+
+.result.show {
+  display: block;
+}
+
+/* Footer-Stile */
+footer {
+  background-color: #2f3542;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
